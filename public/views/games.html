@@ -1,0 +1,16 @@
+<div class="jumbotron text-center">
+    <h1>Game Page</h1>
+    <label for = "nameSearch">Name:</label>
+    <input id = "nameSearch" type="search" ng-model="search.name" placeholder="Search..."/>
+    <label for = "numPlayersSearch">Number of Participants:</label>
+    <input id = "numPLayersSearch" type="number" ng-model="search.numPlayers"/>
+    <label for = "ratingSearch">Minimum rating:</label>
+    <input id = "ratingSearch" type="number" min="0" max="5" step="1" value="0" ng-model="search.rating" style="width:176px"/>
+    <label for = "timeSearch">Estimated time:</label>
+    <input id = "timeSearch" type="search" ng-model="search.estTime"/>
+
+    <div ng-repeat = 'game in games | filter:search:comparator'>
+    	<h2>{{game.name}}</h2>
+    	<p>{{game.description}}</p>
+    </div>
+</div>
