@@ -8,9 +8,15 @@
     <input id = "ratingSearch" type="number" min="0" max="5" step="1" value="0" ng-model="search.rating" style="width:176px"/>
     <label for = "timeSearch">Estimated time:</label>
     <input id = "timeSearch" type="search" ng-model="search.estTime"/>
-
-    <div ng-repeat = 'game in games | filter:search:comparator'>
-    	<h2>{{game.name}}</h2>
-    	<p>{{game.description}}</p>
+    <br><br>
+    <div id="gamelist" ng-repeat = 'game in games | filter:search:comparator'>
+        <div class='panel panel-default'>
+            <div class="accordion-toggle panel-heading">
+                <p style="font-size:16px;text-align:left;margin:0">{{game.name}}</p>
+            </div>
+            <div class="accordion-content panel-body">
+    	      <p>{{game.description}}</p>
+            </div>
+        </div>
     </div>
 </div>
