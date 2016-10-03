@@ -12,5 +12,5 @@ module.exports = mongoose.model('Game',{
 	required: {type: [String], default: []}
 });
 
-//make estTime min/max and make continuous slider for it
-//make a quantized? slider for rating
+//TODO:make estTime min/max and make continuous slider for it
+//TODO:make a quantized? slider for rating

@@ -1,1 +1,1 @@
-angular.module('mainApp', ['ngRoute', 'appRoutes', 'mainCtrl', 'gameCtrl', 'gameService']);
+angular.module('mainApp', ['ngRoute', 'appRoutes', 'mainCtrl', 'gameCtrl', 'addCtrl', 'gameService']);

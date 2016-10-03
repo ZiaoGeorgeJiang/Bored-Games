@@ -1,0 +1,18 @@
+<div class="jumbotron text-center">
+    <h1>Submite New Game</h1>
+
+    <form class='form-inline' ng-submit="addNewGame()">
+    <label for = "name">Name:</label>
+    <input id = "name" type="text" ng-model="newGame.name" placeholder="..."/>
+    <label for = "description">Description:</label>
+    <input id = "description" type="text" ng-model="newGame.description" placeholder="..."/>
+    <label for = "maxNumPlayers">Maximum Number of Participants:</label>
+    <input id = "maxNumPLayers" type="number" ng-model="newGame.numPlayers.max"/>
+    <label for = "minNumPlayers">Minimum Number of Participants:</label>
+    <input id = "minNumPLayers" type="number" ng-model="newGame.numPlayers.min"/>
+    <label for = "time">Estimated time:</label>
+    <input id = "time" type="text" ng-model="newGame.estTime"/>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

@@ -16,6 +16,7 @@ module.exports = function(app){
 		newGame.rating = req.body.rating;
 		//newGame.estTime = req.body.estTime;
 		newGame.required = req.body.required;
+		console.log(newGame);
 		newGame.save(function(err){
 			if (err) res.send(err);
 			else res.json({success:'success'});

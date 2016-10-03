@@ -9,5 +9,10 @@ angular.module('appRoutes',[]).config(['$routeProvider','$locationProvider', fun
 		controller: "gameController"
 	});
 
+	$routeProvider.when('/add', {
+		templateUrl: 'views/add.html',
+		controller: "addController"
+	});
+
 	$locationProvider.html5Mode(true);
 }]);
